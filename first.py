@@ -2,7 +2,7 @@ from fastapi import FastAPI
 app=FastAPI() # object name we can take any name
 @app.get('/')  #this is router
 def home():
-    return {"name":"bhagavaan","age":25}
+    return {"name":"bhagavaan","age":25,"rollno":100}
 
 @app.get("/items/")  
 def list_items():
